@@ -1,0 +1,11 @@
+name: Isolated controller checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run isolated lifecycle, discovery and control tests
+        run: /usr/bin/python3 -m unittest discover -s tests -p 'test_*.py'

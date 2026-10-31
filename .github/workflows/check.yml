@@ -4,7 +4,8 @@ permissions:
   contents: read
 jobs:
   checks:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
+    timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
       - name: Run isolated lifecycle, discovery and control tests

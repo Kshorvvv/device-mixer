@@ -1,0 +1,15 @@
+.DS_Store
+.tools/
+.local-build/
+*.jks
+*.p12
+*.pem
+*.key
+*.local.*
+__pycache__/
+*.pyc
+dist/*.app/
+dist/*.idsig
+assets/*.iconset/
+assets/AppIcon.icns
+assets/icon-1024.png
